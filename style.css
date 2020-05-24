@@ -1,0 +1,112 @@
+body{
+  background-color: hsl(0, 0%, 97%);
+  color: black;
+  font:normal 16px Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  margin:0;
+  padding-bottom: 0px;
+}
+
+
+
+div{
+  margin:auto;
+  width: 80%;
+}
+
+h2, h3{
+  margin: 1px;
+}
+
+p{
+  color: grey;
+  font-size: 24px;
+}
+
+li{
+  font-size: 24px;
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+
+}
+a:hover{
+  background-color:  #7FFFD4;
+  border-radius: 5px;
+
+}
+
+a:active{
+  color:green;
+}
+
+a:visited{
+  font-weight: bold;
+  color:black;
+}
+
+.container:nth-child(even){
+  background: white;
+  width: 100%;
+  padding: 5px 5%;
+}
+
+.block{
+  display: block;
+  float:left;
+  width: 33.3%;
+  box-sizing: border-box;
+}
+
+span.wave  {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: 3;
+  transform-origin: 70% 70%;
+  display: inline;
+}
+
+#main-block{
+  float:left;
+  width: 70%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#aidan {
+  margin:auto;
+  border-radius: 50%;
+  padding:1px;
+  border:2px solid #021a40;
+  background-color: black;
+  max-width: 200px;
+}
+
+#titleIntro{
+  margin-top: 10px;
+}
+
+#titleName{
+  font-size: 50px;
+}
+
+#blurb{
+  margin-top: 320px;
+  margin-right: 50%;
+}
+
+#googleForm{
+  min-width:640px;
+  max-width: auto;
+  height:1000px;
+  margin:0;
+  border-style: none;
+}
+
+#main-footer{
+  padding: 15px;
+}
