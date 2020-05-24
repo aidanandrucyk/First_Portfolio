@@ -8,28 +8,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/248/avocado_1f951.png">
   <meta property="og:title" content="Aidan Andrucyk">
-  <!--
-  <meta property="og:url" content="http://www.aidanandrucyk.com/">
- -->
+  <!--  <meta property="og:url" content="http://www.aidanandrucyk.com/"> -->
   <meta property="og:image:width" content="100">
   <meta property="og:image:height" content="100">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!--bootstrap-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <title>Aidan Andrucyk</title>
 </head>
-<body>
 
-  <div class>
-      <br>
-   <img src="img/aidanCropped.jpg" alt = "mildly attractive male" id = "aidan">
-    
+<body>
+  <!-- bootstrap navbar begin -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none"></span>
+      <span class="d-none d-lg-block">
+        <a href="index.html">
+        <a href="https://www.linkedin.com/in/aidanandrucyk/">
+         <img src="img/aidanCropped.jpg" alt = "mildly attractive male" id = "aidan">
+         </a>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger active" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--End of Bootstrap-->
+
+  <div class = "container" id = "about">
+    <div class = "indent">
+    <br>   
     <h1 id = "titleIntro">Hello World! My name is</h1>
-    <h1 id = "titleName">Aidan Andrucyk <span class="wave">👋</span></h1>
+    <a href="https://www.linkedin.com/in/aidanandrucyk/" target="_blank">
+    <h1 id = "titleName">Aidan Andrucyk <span class="wave">👋🏼</span></h1>
+    </a>
       <p>I am a second-year undergraduate student at the <a href="https://honorscollege.rutgers.edu/frequently-asked-questions" target="_blank">Honors College</a> of Rutgers University–New Brunswick with a <a href="unofficialTranscript.pdf" target="_blank">4.0 GPA</a>. I am pursuing a double major in <a href="https://www.cs.rutgers.edu/academics/undergraduate/cs-degrees/b-s-degree" target="_blank">computer science</a> and <a href="https://ruccs.rutgers.edu/research/architecture" target="_blank">cognitive science on the mind, machines, and computations</a> track with a minor in <a href="https://economics.rutgers.edu/academics/undergraduate/minor-requirements" target="_blank">quantitative economics</a>. I have taken classes in data structures, computer architecture, linear algebra, and economic data analytics and I am always eager to expand my knowledge. I am currently a research assistant for <a href="https://scholar.google.com/citations?user=_Oq2vrEAAAAJ&hl=en" target="_blank">Professor Samaneh G. Hamidi</a>, working in a team of five to develop machine learning algorithms with bayesian networks for modelling the economic effects of the coronavirus.</p>
       <p>As much as I love working in a dynamic problem-solving environment of software development, information technology, and data science, I also derive a deep personal satisfaction from serving the community. I volunteer my time as an <a href="https://www.instagram.com/p/B7Z6tnQpkKP/" target="_blank">“alternative breaker,”</a> forgoing my winter breaks to travel to sites and help underserved communities such as those found on Catalina Island. I also serve as an Assistant Director for the <a href="https://www.rumun.net/about-idia" target="_blank">Institute for Domestic and International Affairs</a> where I help educate high schoolers on complex issues such as <a href="img/rumun2019.jpeg" target="_blank">economic expansion of ASEAN and the South China Sea crisis</a> by using parliamentary procedure to guide debate, maintain decorum, and ensure active and equal participation.</p>
       <p> When I am not working or serving the community, I love spending my time running outdoors, playing <a href="https://store.steampowered.com/app/236850/Europa_Universalis_IV/" target= "_blank">Europa Universalis IV</a> with my friends, making <a href="https://docs.google.com/spreadsheets/d/1M-7ZpixzSDlatI4w54nVVqVvYTVWLxlcA-W00CILasI/edit#gid=0"  target= "_blank">spreadsheets</a>, and <a href="https://www.instagram.com/aandrucyk.va/"  target= "_blank">capturing the world around me</a> with my camera. If you want to know more about me, please feel free to scroll down!</p>
   </div>
+  </div>
 
-  <div class=" container">
+  <div class=" container" id = "projects">
+    <div class = "indent">
    <h1>Projects</h1>
     
    <h2>Ant Colony Simulator</h2>
@@ -46,11 +86,12 @@
         <li>Applies linear algebra concepts to obtain solutions to systems of linear equations using Gaussian elimination, determinants using cofactor expansion, inverses using determinants and adjugates, transpose of a matrix, and the basis for column, row, and null space.</li>
       </ul>
   </div>
+  </div>
 
-  <div class=" container">
-  <div>
+  <div class="container" id = "experience">
+    <div class = "indent">
     <h1>Experience</h1>
-      <h2>Office of Internet Technology: Busch Computer Lab</h2>
+      <h2><a href="https://oit-nb.rutgers.edu/facility/busch-campus-computing-center-arc" target="_blank">Office of Internet Technology: Busch Computer Lab</a></h2>
       <h3>Consultant-in-Training; September 2020 – Present</h3>
       <ul>
         <li>Provided technical support for a lab with 300+ daily users through network, general software, and hardware troubleshooting.</li>
@@ -63,7 +104,7 @@
         <li>Worked under Samaneh G. Hamidi and within a team of five to develop machine learning algorithms with bayesian networks for modelling the economic effects of the coronavirus.</li>
       </ul>
 
-      <h2>Law Offices of Terry J. Finkelstein, Esq.</h2>
+      <h2><a href="https://www.terryfinkelstein.com/" target="_blank">Law Offices of Terry J. Finkelstein, Esq.</a></h2>
       <h3>Legal Intern; March 2019 – August 2019</h3>
       <ul>
         <li>Drafted/reviewed legal documents such as inspection reports, wills, contracts of sale, and prenuptial agreements.</li>
@@ -71,48 +112,53 @@
       </ul>
   </div>
   </div>
-
+ 
   <div class= "container" id = "skills">
-    <h1>Skills</h1>
-    <div class="block">
-      <h2>Proficient Languages:</h2>
-        <ul>
-          <li>Java</li>
-          <li>C</li>
-          <li>R</li>
-        </ul>
-    </div>
-    <div class="block">
-      <h2>Previously Worked With:</h2>
-        <ul>
-          <li>x86 Assembly</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Python</li>
-          <li>MATLAB</li>
-        </ul>
-    </div>
-    <div class="block">
-      <h2>Software:</h2>
-        <ul>
-          <li>Eclipse IDE</li>
-          <li>Andriod IDE</li>
-          <li>Gluon's Scene Builder</li>
-          <li>Windows</li>
-          <li>Adobe Photoshop</li>
-        </ul>
-    </div>
+    <div class = "indent">
+    <h1>Technical Skills</h1>
+    <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" class="icon" />
+    <img src="https://img.icons8.com/color/100/000000/c-programming.png" class="icon" />
+    <img src="img/Rlogo.png" class = "icon"/>
+    <table>
+      <tr>
+        <th>Proficient Languages:</th>
+        <th>Previously Worked With:</th>
+        <th>Software:</th>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>86 Assembly</td>
+        <td>Eclipse IDE</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>HTML/FXML</td>
+        <td>Andriod IDE</td>
+      </tr>
+       <tr>
+        <td>R</td>
+        <td>CSS</td>
+        <td>Gluon's Scene Builder</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Python</td>
+        <td>Adobe Photoshops</td>
+      </tr>
+    </table>
+    <br>
+  </div>
+  </div>
 
-    </div>
-
-
-  <div class=" container">
+  <div class=" container" id = "contact">
+    <div class = "indent">
     <h1>Contact Me</h1>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBxdoPte_4i8anhV6fTVy4f7AYer6mKVX1Q63_F0aUtDjI8Q/viewform?embedded=true" id = "googleForm" ></iframe>
+  </div>
   </div>
 
 </body>
   <footer id = "main-footer">
-    <p>Aidan Andrucyk Personal Website</p>
+    <p>Made by Aidan Andrucyk HTML, CSS, and some Bootstrap</p>
   </footer>
 </html>
