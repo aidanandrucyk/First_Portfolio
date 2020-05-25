@@ -87,6 +87,7 @@ nav{
   }
 }
 
+/* mobile adjustments */
 @media screen and (max-width: 768px){
   body{
     overflow-x: hidden;
@@ -117,8 +118,11 @@ nav{
   .head-break{
     visibility: hidden;
   }
-  table{
-   width: 35%;
+  table {
+    width: 30%
+  }
+  .mobile-table {
+    display: none;
   }
 }
 
@@ -174,6 +178,23 @@ h3{
   font-style: italic;
 }
 
+h5{
+  margin-top: .5rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.4rem;
+  font-size: 1.5rem;
+  color: #4d4d4d;
+}
+
+h6 {
+  padding: .25rem 0rem;
+  font-size: 4rem;
+  font-style: bold;
+  color: black;
+  line-height: 2.9rem;
+}
+
+
 p{
   color: #4d4d4d;
   font-size: 1rem;
@@ -194,7 +215,7 @@ li{
 }
 
 table {
-  width: 80%;
+  width: 90%;
 }
 
 th{
@@ -279,21 +300,6 @@ td{
   float: left;
 }
 
-h5{
-  margin-top: .5rem;
-  margin-bottom: 1.2rem;
-  line-height: 1.4rem;
-  font-size: 1.5rem;
-  color: #4d4d4d;
-}
-
-h6 {
-  padding: .25rem 0rem;
-  font-size: 4rem;
-  font-style: bold;
-  color: black;
-  line-height: 2.9rem;
-}
 
 #titleIntro{
   margin-top: 1rem;
