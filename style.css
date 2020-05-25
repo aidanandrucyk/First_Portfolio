@@ -194,13 +194,13 @@ p{
 }
 
 ul{
-  margin-top: 1%;
   padding-left: 3%;
   padding-bottom: 3%
 }
 
 li{
   font-size: 1.2rem;
+  padding: 1px;
   color: #4d4d4d;
   text-align: justify;
 }
