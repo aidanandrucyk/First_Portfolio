@@ -1,177 +1,362 @@
-<!DOCTYPE html>
-<!--Hi! You are probably looking at my (poorly-formatted?) source code right now. If there is anything I can do to improve, let me know! I am new to web development and always eager to learn!-->
+html{
+  scroll-behavior: smooth
+}
 
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="img/me.png">
-  <meta property="og:title" content="Aidan Andrucyk">
-  <!--  <meta property="og:url" content="http://www.aidanandrucyk.com/"> -->
-  <meta property="og:image:width" content="100">
-  <meta property="og:image:height" content="100">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-   <title>Aidan Andrucyk</title>
-</head>
+::-moz-selection { 
+  color: white;
+  background: #4484CE;
+}
 
-<body>
-  <br id = "About" >
-  <nav>
-    <div class = "logo" >
-      <h4><a href="#About">Aidan Andrucyk</a></h4>
-    </div>
-    <ul class = "nav-links">
-      <li><a href="#About">About</a></li>
-      <li><a href="#Projects">Projects</a></li>
-      <li><a href="#Experience">Experience</a></li>
-      <li><a href="#Skills">Skills</a></li>
-      <li><a href="#Contact">Contact</a></li>
-    </ul>
-    <div class = "burger">
-      <div class = "line1"></div>
-      <div class = "line2"></div>
-      <div class = "line3"></div>
-    </div>
-  </nav>
-  <script src="app.js"></script>
+::selection {
+  color: white;
+  background: #4484CE;
+}
 
-  <div class = "container" id = "about">
-    <div class = "indent">  
-      <br class = "head-break">
-      <img src="img/aidanCropped.jpg" id = "aidan" alt = "mildly attractive male?">
-      <br>
-      <h5 id = "titleIntro">Hello World!  <span class = "makeBlue">My name is</span></h5>
-      <h6 id = "firstName">Aidan <span class = "makeBlue"> Andrucyk</span><span class="wave">👋🏼</span></h6>
-      <h5>East Brunswick, NJ · <a href ="mailto:aa1918@scarletmail.rutgers.edu"><span class = "makeBlue">aa1918@scarletmail.rutgers.edu</span></a></h5>
-      <br class="head-break">
-      <p> I am a second-year undergraduate student at the <a href="https://honorscollege.rutgers.edu/frequently-asked-questions" target="_blank">Honors College</a> of <a href="https://communications.rutgers.edu/resources/rankings-rutgers-university-new-brunswick" target="_blank">Rutgers University–New Brunswick</a> with a <a href="pdfs/unofficialTranscript.pdf" target="_blank">4.0 GPA</a>. I am pursuing a double major in <a href="https://www.cs.rutgers.edu/academics/undergraduate/cs-degrees/b-s-degree" target="_blank">computer science</a> and <a href="https://ruccs.rutgers.edu/research/architecture" target="_blank">cognitive science on the mind, machines, and computations</a> track with a minor in <a href="https://economics.rutgers.edu/academics/undergraduate/minor-requirements" target="_blank">quantitative economics</a>. I have taken classes in data structures, computer architecture, linear algebra, discrete structures, and economic data analytics and I am always eager to expand my knowledge. I am currently a research assistant for <a href="https://scholar.google.com/citations?user=_Oq2vrEAAAAJ&hl=en" target="_blank">Professor Samaneh G. Hamidi</a>, working in a small team to develop models for key indicators of COVID-19 by applying machine learning algorithms and particularly bayesian networks.</p>
-      <p> As much as I love working in a dynamic problem-solving environment of software development, information technology, and data science, I also derive a deep personal satisfaction from serving the community. Throughout high school, I volunteered at the <a href="http://stjames-longbranch.org/sjlb/Ministries/St.%20Brigid%27s%20Pantry/" target="_blank">St. Brigid's Pantry</a>, a soup kitchen in an undeserved area of Long Branch, NJ. I currently volunteer my time at various <a href="https://honorscollege.rutgers.edu/hc-serves-series" target="_blank">Honors College events</a> and as an <a href="https://www.instagram.com/p/B7Z6tnQpkKP/" target="_blank">“alternative breaker,”</a> forgoing my winter breaks to help understaffed volunteer/relief organizations. I also serve as an Assistant Director for the <a href="https://www.rumun.net/about-idia" target="_blank">Institute for Domestic and International Affairs</a> (IDIA). At <a href="img/rumun2019.jpeg" target="_blank">Rutgers University Model UN 2019</a>, an IDIA conference, I helped educate high schoolers on complex issues such as <a href="pdfs/EE Update Paper.pdf" target="_blank">economic expansion of ASEAN</a> and the <a href="pdfs/SCS Update Paper.pdf" target="_blank">South China Sea crisis</a> by using parliamentary procedure to guide debate, maintain decorum, and ensure active and equal participation.</p>
-      <p> When I am not working or serving the community, I love spending my time <a href="https://nj.milesplit.com/athletes/pro/5599963/stats" target="_blank">running outdoors</a>, playing <a href="https://store.steampowered.com/app/236850/Europa_Universalis_IV/" target= "_blank">Europa Universalis IV</a> with my friends, making <a href="https://docs.google.com/spreadsheets/d/1M-7ZpixzSDlatI4w54nVVqVvYTVWLxlcA-W00CILasI/edit#gid=0"  target= "_blank">spreadsheets</a>, and <a href="https://www.instagram.com/aandrucyk.va/"  target= "_blank">capturing the world around me</a> with my camera. If you want to know more about me, please feel free to scroll down!</p>
-      <div class="icons-div">
-        <a href="https://www.linkedin.com/in/aidanandrucyk/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" class = "icon" viewBox="0 0 171 171" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99626v-171.99626h171.99626v171.99626z" fill="none"></path><g id="original-icon" fill="#4484ce"><path d="M140.22,13.68h-109.44c-9.4392,0 -17.1,7.6608 -17.1,17.1v109.44c0,9.4392 7.6608,17.1 17.1,17.1h109.44c9.4392,0 17.1,-7.6608 17.1,-17.1v-109.44c0,-9.4392 -7.6608,-17.1 -17.1,-17.1zM58.14,68.4v64.98h-20.52v-64.98zM37.62,49.4874c0,-4.788 4.104,-8.4474 10.26,-8.4474c6.156,0 10.0206,3.6594 10.26,8.4474c0,4.788 -3.8304,8.6526 -10.26,8.6526c-6.156,0 -10.26,-3.8646 -10.26,-8.6526zM133.38,133.38h-20.52c0,0 0,-31.6692 0,-34.2c0,-6.84 -3.42,-13.68 -11.97,-13.8168h-0.2736c-8.2764,0 -11.6964,7.0452 -11.6964,13.8168c0,3.1122 0,34.2 0,34.2h-20.52v-64.98h20.52v8.7552c0,0 6.6006,-8.7552 19.8702,-8.7552c13.5774,0 24.5898,9.3366 24.5898,28.2492z"></path></g></g></svg>
-        </a>
-        <a href="https://www.instagram.com/aandrucyk.va/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" class = "icon" viewBox="0 0 171 171" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99626v-171.99626h171.99626v171.99626z" fill="none"></path><g fill="#4484ce"><path d="M54.72,10.26c-24.5214,0 -44.46,19.9386 -44.46,44.46v61.56c0,24.5214 19.9386,44.46 44.46,44.46h61.56c24.5214,0 44.46,-19.9386 44.46,-44.46v-61.56c0,-24.5214 -19.9386,-44.46 -44.46,-44.46zM126.54,37.62c3.762,0 6.84,3.078 6.84,6.84c0,3.762 -3.078,6.84 -6.84,6.84c-3.762,0 -6.84,-3.078 -6.84,-6.84c0,-3.762 3.078,-6.84 6.84,-6.84zM85.5,47.88c20.7594,0 37.62,16.8606 37.62,37.62c0,20.7594 -16.8606,37.62 -37.62,37.62c-20.7594,0 -37.62,-16.8606 -37.62,-37.62c0,-20.7594 16.8606,-37.62 37.62,-37.62zM85.5,54.72c-16.9632,0 -30.78,13.8168 -30.78,30.78c0,16.9632 13.8168,30.78 30.78,30.78c16.9632,0 30.78,-13.8168 30.78,-30.78c0,-16.9632 -13.8168,-30.78 -30.78,-30.78z"></path></g></g></svg>
-        </a>
-        <a href="https://github.com/aidanandrucyk" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" class = "icon" viewBox="0 0 171 171" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99626v-171.99626h171.99626v171.99626z" fill="none"></path><g fill="#4484ce"><path d="M60.84522,160.17912c2.43162,-1.04652 4.13478,-3.46446 4.13478,-6.27912v-18.468c0,-0.67374 0.05472,-1.37484 0.14022,-2.0862c-0.04788,0.01368 -0.09234,0.02394 -0.14022,0.0342c0,0 -10.26,0 -12.312,0c-5.13,0 -9.576,-2.052 -11.628,-6.156c-2.394,-4.446 -3.42,-11.97 -9.576,-16.074c-1.026,-0.684 -0.342,-1.71 1.71,-1.71c2.052,0.342 6.498,3.078 9.234,6.84c3.078,3.762 6.156,6.84 11.628,6.84c8.50554,0 13.0644,-0.4275 15.80724,-1.8981c3.19428,-4.75038 7.61634,-8.3619 12.23676,-8.3619v-0.0855c-19.38456,-0.62244 -31.76838,-7.06572 -37.5345,-17.0145c-12.5343,0.14364 -23.44752,1.3851 -29.67534,2.41794c-0.19836,-1.11834 -0.36936,-2.24352 -0.51642,-3.37554c6.14574,-1.01232 16.56306,-2.21274 28.5399,-2.44188c-0.38304,-0.94392 -0.71478,-1.91178 -0.99522,-2.90358c-12.00762,-0.60876 -22.37022,-0.13338 -27.99954,0.33174c-0.0684,-1.13544 -0.16074,-2.26746 -0.17442,-3.41658c5.63958,-0.4617 15.72174,-0.9234 27.42156,-0.37962c-0.27018,-1.71 -0.4446,-3.45762 -0.4446,-5.27706c0,-5.814 2.052,-11.97 5.814,-17.1c-1.71,-5.814 -4.104,-18.126 0.684,-22.572c9.234,0 15.732,4.446 18.81,7.182c5.81058,-2.39742 12.30858,-3.76542 19.49058,-3.76542c7.182,0 13.68,1.368 19.152,3.762c3.078,-2.736 9.576,-7.182 18.81,-7.182c5.13,4.788 2.394,17.1 0.684,22.572c3.762,5.13 5.814,10.944 5.472,17.1c0,1.65528 -0.1539,3.25242 -0.3762,4.81878c11.96658,-0.58824 22.32234,-0.11628 28.05768,0.34884c-0.00684,1.15254 -0.11286,2.27772 -0.17442,3.41658c-5.71482,-0.47196 -16.3305,-0.9576 -28.58778,-0.30438c-0.30438,1.14912 -0.67374,2.26746 -1.1115,3.3516c12.12732,0.15732 22.7943,1.33038 29.23416,2.35638c-0.14706,1.13544 -0.31806,2.26062 -0.51642,3.37554c-6.53904,-1.04652 -17.68482,-2.27088 -30.36618,-2.33244c-5.6943,9.84276 -17.8524,16.2621 -36.85734,17.01108v0.10602c8.892,0 17.1,13.338 17.1,22.572v18.468c0,2.81466 1.70316,5.2326 4.13478,6.27912c31.33062,-10.36944 54.00522,-39.91824 54.00522,-74.67912c0,-43.37244 -35.28414,-78.66 -78.66,-78.66c-43.37586,0 -78.66,35.28756 -78.66,78.66c0,34.76088 22.6746,64.30968 54.00522,74.67912z"></path></g></g></svg>
-        </a>
-        <a href="pdfs/resume.pdf" target="_blank" alt ="Resume will be added later">
-          <svg xmlns="http://www.w3.org/2000/svg" class = "icon" viewBox="0 0 171 171" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99626v-171.99626h171.99626v171.99626z" fill="none"></path><g fill="#4484ce"><path d="M23.94,6.84v157.32h123.12v-111.37711l-47.30555,-45.94289zM99.18,13.68l41.04,41.04h-41.04zM81.2918,68.19961c2.0707,0 3.88758,0.86836 5.11664,2.45812c2.60508,3.39328 2.43141,10.31344 -0.53438,20.5868c3.23297,5.4907 7.30758,10.47375 11.4757,14.01398c4.54219,-0.93516 8.44312,-1.40273 11.59594,-1.40273c9.53859,0 10.58063,4.7693 10.58063,6.82664c-0.01336,6.59953 -7.06711,6.59953 -9.72563,6.59953c-4.55555,0 -9.29812,-1.75008 -14.09414,-5.22352c-6.98695,1.65656 -14.78883,4.19485 -21.74906,7.09383c-8.85727,15.18961 -14.25445,15.18961 -16.04461,15.18961c-1.09547,0 -2.15086,-0.25383 -3.1261,-0.76148c-3.09938,-1.61648 -3.4868,-3.9811 -3.43336,-5.22352c0.0668,-1.60313 0.25383,-6.39914 17.99508,-14.1075c3.7139,-6.73313 7.22742,-14.88234 9.56531,-22.28344c-2.6986,-5.0632 -7.12055,-15.00258 -3.72727,-20.56008c1.26914,-2.05734 3.43336,-3.20625 6.10523,-3.20625zM81.19828,74.39836c-0.21375,0.09352 -0.3607,0.14695 -0.40078,0.16031c-0.50765,0.45422 -0.65461,2.9257 0.64125,7.04039c0.70805,-4.71586 0.16031,-6.78656 -0.24047,-7.2007zM83.45602,99.30023l-0.14695,0.52102l-0.17367,-0.28055c-1.3493,3.60703 -2.89898,7.2675 -4.54219,10.76765l0.53437,-0.22711l-0.24047,0.41414c3.50016,-1.24242 7.06711,-2.36461 10.52719,-3.31312l-0.17367,-0.14695l0.54773,-0.12023c-2.21765,-2.2711 -4.36851,-4.84945 -6.33234,-7.61485zM108.9457,110.13469c-0.94852,0 -1.99055,0.0668 -3.13945,0.16031c1.38938,0.45422 2.72531,0.69469 3.99445,0.69469c1.69664,0 2.59172,-0.13359 3.0593,-0.25383c-0.40078,-0.24047 -1.50961,-0.60117 -3.9143,-0.60117zM61.78711,125.2575c-1.76344,1.13555 -2.83219,2.05735 -3.42,2.68523c0.68133,-0.24047 1.8436,-1.00195 3.42,-2.68523z"></path></g></g></svg>
-        </a>
-      </div>
-  </div>
-  <br id = "Projects";>
-  </div>
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-  <div class="container" id = "projects">
-    <div class = "indent">
-   <h1>Projects</h1>
-    
-   <h2>Ant Colony Simulator</h2>
-      <h3>Java, CSS; May 2020 – Present</h3>
-      <ul>
-        <li>Currently in the process of building a mobile game on andriod OS to simulate an ant colony </li>
-      </ul>
 
-    <h2><a href="https://github.com/aidanandrucyk/RegressionModel" target="_blank">Multiple Linear Regression Model</a></h2>
-      <h3>Java, CSS, XFML; May 2020</h3>
-      <ul>
-        <li>Built a desktop application that uses least-squares approximation to generate a linear regression model given multiple explanatory variables, synthesizing concepts from linear algebra and statistics to output the least-squares-regression-line equation, covariance matrix, and coefficients of correlation and determination. </li>
-        <li>Created the GUI using the JavaFX library as well as CSS for styling and Gluon’s SceneBuilder for handling FXML.</li>
-      </ul>
+/* navbar */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #4484CE;
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-      <h2><a href="index.html" target="_blank">Personal Website</a></h2>
-      <h3>HTML, CSS, JavaScript; May 2020</h3>
-      <ul>
-        <li>Challenged self to build this website in under 24 hours. </li>
-        <li>Compatible with mobile devices with a responsive, collapsable navbar.</li>
-        <li>Created animations for waving, burger clicking, and navbar list fading in/out using JavaScript.</li>
-      </ul>
-  </div>
-  <br id = "Experience">
-  </div>
+.logo a{
+ color: hsl(0, 0%, 97%); 
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 4px;
+ font-size: 1.5rem;
+}
 
-  <div class="container" id = "experience">
-    <div class = "indent">
-    <h1>Professional Experience</h1>
-      <h2><a href="https://oit-nb.rutgers.edu/facility/busch-campus-computing-center-arc" target="_blank">Office of Internet Technology: Busch Computing Center</a></h2>
-      <h3>Consultant-in-Training; September 2020 – Present</h3>
-      <ul>
-        <li>Provided technical support for a lab with 300+ daily users through network, general software, and hardware troubleshooting.</li>
-        <li>Performed routine preventative maintenance of computer lab equipment as well as gathered hourly statistics of lab usage.</li>
-      </ul>
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  padding-bottom: 0;
+}
 
-      <h2><a href="https://github.com/tanmul/Summer-MLNN-Research" target="_blank">Rider University Department of Mathematics</a></h2>
-      <h3>Research Assistant; May 2020 – Present</h3>
-      <ul>
-        <li>Collaborating in a small team to develop models for key indicators of COVID-19 by applying machine learning algorithms and particularly bayesian networks.</li>
-      </ul>
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 1.2rem;
 
-      <h2><a href="https://www.terryfinkelstein.com/" target="_blank">Law Offices of Terry J. Finkelstein, Esq.</a></h2>
-      <h3>Legal Intern; March 2019 – August 2019</h3>
-      <ul>
-        <li>Drafted/reviewed legal documents such as inspection reports, wills, contracts of sale, and prenuptial agreements.</li>
-        <li>Performed clerical work such as answering/making phone calls, organizing case files, and sending/requesting documents. </li>
-      </ul>
-  </div>
-  <br id = "Skills">
-  </div>
- 
-  <div class= "container" id = "skills">
-    <div class = "indent">
-    <h1>Technical Skills</h1>
-    <table>
-      <tr>
-        <th>Proficient Languages:</th>
-        <th>Previously Worked With:</th>
-        <th>Software:</th>
-        <th class = "mobile-table">Libraries/Technologies:</th>
-      </tr>
-      <tr>
-        <td>Java</td>
-        <td>x86 Assembly</td>
-        <td>Eclipse IDE</td>
-        <td class = "mobile-table">JavaFX</td>
-      </tr>
-      <tr>
-        <td>C</td>
-        <td>HTML/FXML/CSS</td>
-        <td>Andriod IDE</td>
-        <td class = "mobile-table">Google Ads API</td>
-      </tr>
-       <tr>
-        <td>Python</td>
-        <td>JavaScript</td>
-        <td>Gluon's SceneBuilder</td>
-        <td class = "mobile-table"></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>R</td>
-        <td>Adobe Photoshops</td>
-        <td class = "mobile-table"></td>
-      </tr>
-    </table>
-    <br>
-  </div>
-  <br id = "Contact" >
-  </div>
+}
 
-  <div class="container" id = "contact">
-    <div class = "indent">
-    <h1>Contact Me</h1>
-    <h2 align="center">East Brunswick, NJ 08816  ·   <a href ="mailto:aa1918@scarletmail.rutgers.edu">aa1918@scarletmail.rutgers.edu</a>  ·   (848)-202-6795</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBxdoPte_4i8anhV6fTVy4f7AYer6mKVX1Q63_F0aUtDjI8Q/viewform?embedded=true" id = "googleForm" ></iframe>
-  </div>
-  </div>
-</body>
+.nav-links li{
+  list-style: none;
 
-  <footer id = "main-footer">
-    <p>Made by Aidan Andrucyk using HTML, CSS, & some JavaScript</p>
-  </footer>
+}
 
-</html>
+.burger div{
+  width: 25px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: hsl(0, 0%, 97%);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 1024px){
+
+  .nav-links a{
+    letter-spacing: 0px;
+  }
+  #aidan{
+    display: none; 
+  }
+  .head-break{
+    display: none;
+  }
+}
+
+/* mobile adjustments */
+@media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 95vh;
+    top: 7.5vh;
+    background-color: #4484CE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .burger{
+     display: block;  
+     cursor: pointer; 
+  }
+  #aidan{
+    display: none;
+  }
+  .head-break{
+    visibility: hidden;
+  }
+  table {
+    width: 30%
+  }
+  .mobile-table {
+    display: none;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px)
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* Main Body */
+body{
+  padding-top: 10px;
+  color: black;
+  font:normal 16px 'Poppins', sans-serif;
+  line-height: 1.6em;
+}
+
+div{
+  margin:auto;
+}
+
+h1{
+  color:  #4484CE;
+  font-size: 2.5rem;
+  padding: 2%;
+}
+
+h2, h3{
+  margin: 1px;
+}
+
+h3{
+  color: #4d4d4d;
+  font-style: italic;
+}
+
+h5{
+  margin-top: .5rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.4rem;
+  font-size: 1.5rem;
+  color: #4d4d4d;
+}
+
+h6 {
+  padding: .25rem 0rem;
+  font-size: 4rem;
+  font-style: bold;
+  color: black;
+  line-height: 2.9rem;
+}
+
+
+p{
+  color: #4d4d4d;
+  font-size: 1rem;
+  padding-bottom: 1rem; 
+  text-align: justify;
+}
+
+ul{
+  margin-top: 2px;
+  padding-left: 2%;
+  padding-bottom: 2%
+}
+
+li{
+  font-size: 1.2rem;
+  color: #4d4d4d;
+  text-align: justify;
+}
+
+table {
+  width: 90%;
+}
+
+th{
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 0;
+}
+
+td{
+  font-size: 16px;
+  text-align: left;
+  padding-left: 1%;
+}
+
+.container:nth-child(even){
+  
+  background: white;
+  margin-width: 100%;
+  padding: 5px 5%;
+  /*
+  border: 2px solid black;
+  */
+}
+
+.container:nth-child(odd){
+
+  background: hsl(0, 0%, 97%);
+  margin-width: 100%;
+  padding: 5px 5%;
+ /*
+  border: 2px solid black;
+  */
+}
+
+.indent{
+  margin-top:  15px;
+  margin-width: 80%;
+}
+
+.indent a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+
+}
+
+.indent a:hover, a:active{
+  background-color: rgb(234,227,203,.60);
+  border-radius: 5px;
+}
+
+.indent a:visited{
+  font-weight: bold;
+  color:black;
+}
+
+.icons-div{
+  text-align: center;
+}
+
+.icon{
+  width: 52px;
+  filter: gray; 
+  -webkit-filter: grayscale(1); 
+  filter: grayscale(1); 
+}
+
+.icon:hover{
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+#aidan {
+  margin:auto;
+  border-radius: 50%;
+  padding:1px;
+  margin-right: 1rem;
+  margin-bottom: .25rem;
+  border:.25px solid #4d4d4d;;
+  background-color: #4d4d4d;
+  max-width: 200px;
+  float: left;
+}
+
+
+#titleIntro{
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+#email{
+  color: 
+}
+
+.makeBlue{
+  color:  #4484CE;
+}
+
+#googleForm{
+  width: 100%;
+  height:1050px;
+  margin:0;
+  border-style: none;
+}
+
+#main-footer{
+  background-color: hsl(0, 0%, 97%); 
+  padding: 15px;
+  text-align: center;
+}
+
+/*wave animation*/
+span.wave {
+  font-size: 2.7rem;
+  animation-name: waveAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  transform-origin: 65% 65%;
+  display: inline-block;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-12deg);
+  }
+  20% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-12deg);
+  }
+  40% {
+    transform: rotate(11deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
