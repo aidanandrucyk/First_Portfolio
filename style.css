@@ -117,6 +117,9 @@ nav{
   .head-break{
     visibility: hidden;
   }
+  table{
+   width: 35%;
+  }
 }
 
 .nav-active{
@@ -191,7 +194,7 @@ li{
 }
 
 table {
-  width: 40%;
+  width: 80%;
 }
 
 th{
