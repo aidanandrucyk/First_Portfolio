@@ -120,9 +120,8 @@ nav{
   table {
     width: 30%
   }
-  .mobile-table {
-    display: none;
-  }
+  h5 {
+    font-size: 1rem;
 }
 
 .nav-active{
