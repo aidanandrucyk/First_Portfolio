@@ -121,7 +121,7 @@ nav{
     width: 30%
   }
   .mobile-table {
-    display: hidden;
+    display: none;
   }
 }
 
