@@ -1,2 +1,2 @@
-# aidanandrucyk.github.io
-Personal website made using HTML, CSS, and some JavaScript
+# Aidan Andrucyk's Personal Website
+[Personal website](https://aidanandrucyk.github.io/) made using HTML, CSS, and some JavaScript.
