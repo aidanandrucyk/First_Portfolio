@@ -1,5 +1,6 @@
-html{
-  scroll-behavior: smooth
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px; 
 }
 
 ::-moz-selection { 
@@ -30,14 +31,19 @@ nav{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .logo a{
- color: hsl(0, 0%, 97%); 
+ color: hsl(0, 0%, 95%); 
  text-decoration: none;
  text-transform: uppercase;
  letter-spacing: 4px;
  font-size: 1.5rem;
+}
+
+nav ul li {
+  display: table-cell;
 }
 
 .nav-links{
@@ -48,18 +54,32 @@ nav{
 }
 
 .nav-links a{
-  color: white;
+  color: hsl(0, 0%, 97%);
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: bold;
   font-size: 1.2rem;
+}
 
+.nav-links a:hover{
+  color: #fff4db;
+  text-decoration: none;
+  border-bottom: 3px solid #fff4db;
 }
 
 .nav-links li{
   list-style: none;
-
 }
+
+nav ul li a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid #4484CE;
+}
+
+
 
 .burger div{
   width: 25px;
@@ -74,7 +94,7 @@ nav{
   display: none;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1280px){
 
   .nav-links a{
     letter-spacing: 0px;
@@ -85,9 +105,12 @@ nav{
   .head-break{
     display: none;
   }
+  .slider {
+    width: 80%;
+  }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
   body{
     overflow-x: hidden;
   }
@@ -127,6 +150,19 @@ nav{
     margin-top: .5rem;
     font-size: 1.2rem;
   }
+  .slider {
+    width: 90%;
+  }
+  .nav-links a:hover{
+    color: #fff4db;
+    text-decoration: none;
+    border-bottom: 3px solid #4484CE;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .nav-active{
@@ -164,14 +200,14 @@ body{
 
 div{
   margin:auto;
-  line-height: 5rem: 
 }
 
 h1{
   color:  #4484CE;
   margin: 2rem;
   font-size: 2.5rem;
-  line-height: 5rem: 
+  line-height: 1rem;
+  text-align: center;
 }
 
 h2, h3{
@@ -218,46 +254,17 @@ td{
   padding-left: 1%;
 }
 
-.container:nth-child(even){
-  
+.container:nth-child(odd){
   background: white;
-  margin-width: 100%;
-  padding: 5px 5%;
-  /*
-  border: 2px solid black;
-  */
+  width: 100%;
+  padding: .9rem 7.5%;
 }
 
-.container:nth-child(odd){
+.container:nth-child(even){
 
   background: hsl(0, 0%, 97%);
-  margin-width: 100%;
-  padding: 5px 5%;
- /*
-  border: 2px solid black;
-  */
-}
-
-.indent{
-  margin-top:  15px;
-  margin-width: 70%;
-}
-
-.indent a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-
-}
-
-.indent a:hover, a:active{
-  background-color: rgb(234,227,203,.60);
-  border-radius: 5px;
-}
-
-.indent a:visited{
-  font-weight: bold;
-  color:black;
+  width: 100%;
+  padding: 1rem 7.5%;
 }
 
 .icons-div{
@@ -274,6 +281,97 @@ td{
 .icon:hover{
   -webkit-filter: grayscale(0);
   filter: none;
+  background-color: none;
+}
+
+.icon a:hover, a:active{
+  background-color: none;
+}
+
+.indent{
+  margin-top:  15px;
+}
+
+.indent a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.indent a:hover, a:active{
+  background-color: rgb(234,227,203,.60);
+  border-radius: 5px;
+}
+
+.indent a:visited{
+  font-weight: bold;
+  color:black;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  height: 100%;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  transition: 0.3s;
+  padding: 1rem;
+  text-align: center;
+  background-color: hsl(0, 0%, 95%);
+  border: 5px;
+  border-radius: 5px; 
+}
+
+.card-header{
+  font-size: 1.1rem;
+}
+
+.card-description{
+  color: #3f4041;
+  font-size: .9rem;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1248px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+#Mapbox{
+  border: 4px solid #4484CE;
+  border-radius: 3px;
+  margin: .5rem;
+}
+
+#resume_frame{
+  width: 100%;
+  height: 550px;
+  border-color: #4484CE;
+  border-width: 15px;
+  border-radius: 13px;
 }
 
 #aidan {
@@ -309,10 +407,6 @@ h6 {
   font-size: 1.8rem;
 }
 
-#email{
-  color: 
-}
-
 .makeBlue{
   color:  #4484CE;
 }
@@ -325,9 +419,27 @@ h6 {
 }
 
 #main-footer{
-  background-color: hsl(0, 0%, 97%); 
-  padding: 15px;
+  background-color: #4484CE; 
+  color: #4d4d4d;
+  padding: 5px;
   text-align: center;
+}
+
+#footer-txt{
+  text-align: center;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 97%);
+  margin-top: 1rem;
+  margin-bottom: .1rem;
+  line-height: 1.3rem;
+}
+#footer-name{
+  text-align: center;
+  font-size: 1rem;
+  color: hsl(0, 0%, 94%);
+  margin-top: 0rem;
+  margin-bottom: 1.2rem;
+  line-height: 1rem;
 }
 
 /*wave animation*/
@@ -339,6 +451,7 @@ span.wave {
   transform-origin: 65% 65%;
   display: inline-block;
 }
+
 
 @keyframes waveAnimation {
   0% {
